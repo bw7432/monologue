@@ -16,7 +16,7 @@ gemspec
 
 group :development, :test do
   gem "thin"
-  gem 'rails', '= 4.2.7'
+  gem 'rails', '= 4.2.6'
   gem 'responders', '~> 2.0'
   gem 'pry'
 
