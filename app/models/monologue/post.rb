@@ -1,13 +1,13 @@
 class Monologue::Post < ActiveRecord::Base
-  has_many :taggings
-  has_many :tags, -> { order "id ASC" }, through: :taggings, dependent: :destroy
+  # has_many :taggings
+  # has_many :tags, -> { order "id ASC" }, through: :taggings, dependent: :destroy
   before_validation :generate_url
   belongs_to :user
 
   scope :default,  -> {order("published_at DESC, monologue_posts.created_at DESC, monologue_posts.updated_at DESC") }
   scope :published, -> { default.where(published: true).where("published_at <= ?", DateTime.now) }
 
-  default_scope{includes(:tags)}
+  # default_scope{includes(:tags)}
 
   validates :user_id, presence: true
   validates :title, :content, :url, :published_at, presence: true
