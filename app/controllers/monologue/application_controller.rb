@@ -6,7 +6,7 @@ class Monologue::ApplicationController < ApplicationController
   before_filter :recent_posts, :archive_posts
 
   def recent_posts
-    @recent_posts = Monologue::Post.published.limit(3)
+    @recent_posts = Monologue::Post.published.limit(8)
   end
 
   def all_tags
