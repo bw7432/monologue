@@ -45,7 +45,7 @@ To learn how to upgrade, see [UPGRADE.md](https://github.com/jipiboily/monologue
 ## Installation
 ### 1. Add the gem to your `Gemfile`.
 ```ruby
-gem 'monologue'
+gem 'monologue', :git => 'git://github.com/bw7432/monologue.git'
 ```
 And run `bundle install` to fetch the gem and update your 'Gemfile.lock'.
 
