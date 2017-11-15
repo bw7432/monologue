@@ -4,7 +4,7 @@
 [![Code Climate](https://codeclimate.com/github/jipiboily/monologue.png)](https://codeclimate.com/github/jipiboily/monologue)
 [![Coverage Status](https://coveralls.io/repos/jipiboily/monologue/badge.png?branch=master)](https://coveralls.io/r/jipiboily/monologue?branch=master)
 
-**This is a fork of the master branch as it existed on 11/9/2017. I will be continuing development on this project on this fork. This is a great solution for anyone who wants to run a blog on their rails apps, and it's especially helpful to have a gem for those of us who have multiple rails apps. I may port this project to Rails 5 in the future. I have disabled the tagging system for this project - it was terribly coded and experiences scalability issues when you publish more than a few blog posts. As I have time, I'll continue to refine this gem and keep it basic.
+**This is a fork of the master branch of jipiboily's blogging engine, monologue, as it existed on 11/9/2017. I will be continuing development on this project on this fork. This is a great solution for anyone who wants to run a blog on their rails apps, and it's especially helpful to have a gem for those of us who have multiple rails apps. I may port this project to Rails 5 in the future. I have disabled the tagging system for this project - it was terribly coded and experienced scalability issues when you publish more than a few blog posts (10+ second page load times). I'm not a fan of taggings in blog posts anyway, as they produce duplicated content, and I may not add this feature back. As I have time, I'll continue to refine this gem and keep it basic.
 
 Monologue is a basic, mountable blogging engine in Rails built to be easily mounted in an already existing Rails app, but it can also be used alone.
 
