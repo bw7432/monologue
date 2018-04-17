@@ -1,6 +1,6 @@
 require 'active_support/concern'
 
-module Monologue::ControllerHelpers::User
+class Monologue::ControllerHelpers::User
   # module ControllerHelpers
   #   module User
       extend ActiveSupport::Concern
