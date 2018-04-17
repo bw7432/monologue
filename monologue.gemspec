@@ -25,6 +25,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'select2-rails'
   s.add_dependency "sass-rails"
   s.add_dependency "responders"
+  s.add_dependency "webmock"
+  s.add_dependency "web_console"
 
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency 'factory_girl_rails'
