@@ -1,8 +1,8 @@
 require 'active_support/concern'
 
-class Monologue::ControllerHelpers::Auth
-  # module ControllerHelpers
-  #   module Auth
+module Monologue
+  module ControllerHelpers
+    module Auth
       extend ActiveSupport::Concern
       include Monologue::ControllerHelpers::User
 
@@ -16,6 +16,6 @@ class Monologue::ControllerHelpers::Auth
            redirect_to monologue.admin_login_url, alert: I18n.t("monologue.admin.login.need_auth")
          end
       end
-  #   end
-  # end
+    end
+  end
 end
