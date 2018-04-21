@@ -20,7 +20,7 @@ group :development, :test do
   gem 'responders', '~> 2.0'
   gem 'pry'
   gem "capybara-webkit"
-  gem "factory_girl_rails"
+  gem "factory_girl", :require => false
 
   if RUBY_PLATFORM.downcase.include?("darwin")
     gem 'rb-fsevent'

@@ -1,7 +1,7 @@
 require 'spec_helper'
 describe "archive" do
   before(:each) do
-    Factory(:post, title: "post X", published_at: '2011-11-11')
+    FactoryGirl.create(:post, title: "post X", published_at: '2011-11-11')
   end
 
   it "lists archived posts" do

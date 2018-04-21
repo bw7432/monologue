@@ -9,6 +9,6 @@ FactoryGirl.define do
   end
 
   factory :user_with_post, class: Monologue::User, parent: :user do |user|
-    user.after_create { |u| Factory(:post, user: u) }
+    user.after_create { |u| FactoryGirl.create(:post, user: u) }
   end
 end

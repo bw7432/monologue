@@ -8,7 +8,7 @@ require 'capybara/rspec'
 require 'capybara/rails'
 require 'capybara-webkit'
 
-require "factory_girl_rails"
+require "factory_girl"
 require 'database_cleaner'
 require 'shoulda'
 
@@ -16,12 +16,14 @@ require 'coveralls'
 Coveralls.wear!
 
 
-ENGINE_RAILS_ROOT=File.join(File.dirname(__FILE__), '../')
+# ENGINE_RAILS_ROOT=File.join(File.dirname(__FILE__), '../')
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
-Dir[File.join(ENGINE_RAILS_ROOT, "spec/support/**/*.rb")].each {|f| require f }
-Dir[File.join(ENGINE_RAILS_ROOT, "spec/factories/**/*.rb")].each {|f| require f}
+Dir[Rails.root.join(File.dirname(__FILE__), '../',"spec/support/**/*.rb")].each {|f| require f}
+Dir[Rails.root.join(File.dirname(__FILE__), '../',"spec/factories/**/*.rb")].each {|f| require f}
+# Dir[File.join(ENGINE_RAILS_ROOT, "spec/support/**/*.rb")].each {|f| require f }
+# Dir[File.join(ENGINE_RAILS_ROOT, "spec/factories/**/*.rb")].each {|f| require f}
 
 
 Rails.backtrace_cleaner.remove_silencers!
