@@ -1,5 +1,5 @@
 class Monologue::ApplicationController < ApplicationController
-  include Monologue::User
+  include Monologue::ControllerHelpers::User
 
   layout Monologue::Config.layout if Monologue::Config.layout # TODO: find a way to test that. It was asked in issue #54 (https://github.com/jipiboily/monologue/issues/54)
 

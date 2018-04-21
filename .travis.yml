@@ -13,9 +13,10 @@ rvm:
 gemfile:
   - spec/support/gemfiles/rails4_0.gemfile
   - spec/support/gemfiles/rails4_1.gemfile
+  - spec/support/gemfiles/rails5.1.gemfile
 
 sudo: false
 
 env:
-  - DB=mysql DB_USERNAME=root
-  - DB=postgresql DB_USERNAME=postgres
+  # - DB=mysql DB_USERNAME=root
+  - DB=postgresql

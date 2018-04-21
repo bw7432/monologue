@@ -1,4 +1,4 @@
-class Monologue::Post < ApplicationRecord
+class Monologue::Post < ActiveRecord::Base
   # has_many :taggings
   # has_many :tags, -> { order "id ASC" }, through: :taggings, dependent: :destroy
   before_validation :generate_url

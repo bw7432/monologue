@@ -1,7 +1,7 @@
 require 'active_support/concern'
 
 module Monologue
-  # module ControllerHelpers
+  module ControllerHelpers
     module User
       extend ActiveSupport::Concern
 
@@ -13,6 +13,6 @@ module Monologue
       def monologue_current_user
         @monologue_current_user ||= Monologue::User.find(session[:monologue_user_id]) if session[:monologue_user_id]
       end
-    # end
+    end
   end
 end

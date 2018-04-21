@@ -1,4 +1,4 @@
-class CreateMonologuePostsRevisions < ActiveRecord::Migration
+class CreateMonologuePostsRevisions < ActiveRecord::Migration[5.1]
   def change
     create_table :monologue_posts_revisions do |t|
       t.string :title
@@ -10,9 +10,9 @@ class CreateMonologuePostsRevisions < ActiveRecord::Migration
 
       t.timestamps
     end
-    
+
     add_index :monologue_posts_revisions, :id, unique: true
     add_index :monologue_posts_revisions, :published_at
-    add_index :monologue_posts_revisions, :post_id    
+    add_index :monologue_posts_revisions, :post_id
   end
 end

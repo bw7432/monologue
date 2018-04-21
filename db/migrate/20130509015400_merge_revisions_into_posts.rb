@@ -1,4 +1,4 @@
-class MergeRevisionsIntoPosts < ActiveRecord::Migration
+class MergeRevisionsIntoPosts < ActiveRecord::Migration[5.1]
   class Monologue::PostsRevision < ActiveRecord::Base
   end
 

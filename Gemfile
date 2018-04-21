@@ -11,14 +11,16 @@ gemspec
 # your gem to rubygems.org.
 
 # To use debugger
-#gem 'ruby-debug'
-#gem 'ruby-debug19'
+# gem 'ruby-debug'
+# gem 'ruby-debug19'
 
 group :development, :test do
   gem "thin"
   gem 'rails', '= 5.1.4'
   gem 'responders', '~> 2.0'
   gem 'pry'
+  gem "capybara-webkit"
+  gem "factory_girl_rails"
 
   if RUBY_PLATFORM.downcase.include?("darwin")
     gem 'rb-fsevent'
@@ -27,5 +29,6 @@ group :development, :test do
 end
 
 gem 'coveralls', require: false
-gem 'pg'
 gem 'turbolinks'
+gem "rdoc"
+gem 'pg', '~> 0.18'

@@ -1,4 +1,4 @@
-class Monologue::User < ApplicationRecord
+class Monologue::User < ActiveRecord::Base
   has_many :posts
 
   has_secure_password
