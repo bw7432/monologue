@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md", "deprecations.rb"]
 
-  s.add_dependency "rails", "= 6.0.2"
+  s.add_dependency "rails", "~> 6.0.2"
   s.add_dependency "bcrypt"
   s.add_dependency "coffee-rails"
   s.add_dependency "truncate_html"
